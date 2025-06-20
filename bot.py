@@ -28,9 +28,13 @@ async def weather(update: Update, context: ContextTypes.DEFAULT_TYPE):
         temp = data["main"]["temp"]
         desc = data["weather"][0]["description"]
 
-        message = f"""🌤 Погода в {name}:
-🌡 Температура: {temp}°C
-📝 Описание: {desc}"""
+        message = (
+            f"🌤 Погода в {name}:
+"
+            f"🌡 Температура: {temp}°C
+"
+            f"📝 Описание: {desc}"
+        )
         await update.message.reply_text(message)
 
     except Exception as e:
