@@ -29,10 +29,8 @@ async def weather(update: Update, context: ContextTypes.DEFAULT_TYPE):
         desc = data["weather"][0]["description"]
 
         message = (
-            f"🌤 Погода в {name}:
-"
-            f"🌡 Температура: {temp}°C
-"
+            f"🌤 Погода в {name}:\n"
+            f"🌡 Температура: {temp}°C\n"
             f"📝 Описание: {desc}"
         )
         await update.message.reply_text(message)
