@@ -1,18 +1,11 @@
-# Telegram Бот "Погода" (Render Deployment)
+# Telegram Weather Bot
 
-Этот бот показывает текущую погоду по команде `/weather <город>` с помощью API OpenWeatherMap.
-
-## 🚀 Деплой на Render
-
-1. Создай репозиторий `victoriys` на GitHub и закинь туда файлы.
-2. Перейди на [Render.com](https://render.com) и нажми **New Web Service**.
-3. Выбери свой репозиторий `victoriys`.
-4. В настройках укажи:
-   - **Build Command:** `pip install -r requirements.txt`
-   - **Start Command:** `bash start.sh`
-5. Добавь переменные окружения:
-   - `BOT_TOKEN` — токен от @BotFather
-   - `WEATHER_API_KEY` — ключ с https://openweathermap.org
-6. Нажми **Create Web Service**.
-
-Бот будет автоматически запускаться в облаке.
+## 🚀 Установка
+1. Загрузите код в репозиторий GitHub.
+2. На Render.com создайте Web Service:
+   - Build Command: `pip install -r requirements.txt`
+   - Start Command: `bash start.sh`
+3. В настройках Render задайте переменные окружения:
+   - BOT_TOKEN — токен бота
+   - WEATHER_API_KEY — ключ OpenWeatherMap
+4. Готово!
